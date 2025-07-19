@@ -87,15 +87,11 @@ function showSlides(n) {
 setInterval(() => plusSlides(1), 4000);
 
 // 🎵 AUTOPLAY MUSIC WITH FALLBACK
-window.addEventListener('load', () => {
+function startMusic() {
   const music = document.getElementById("bgMusic");
-  if (music) {
-    const playPromise = music.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        // If blocked, play on first click
-        document.addEventListener("click", () => music.play(), { once: true });
-      });
-    }
-  }
+  music.play();
+  document.getElementById("music-overlay").style.display = "none";
+}
+window.addEventListener('load', () => {
+  // Remove old autoplay fallback
 });
