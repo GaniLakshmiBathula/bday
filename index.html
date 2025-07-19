@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Annaya!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="animated">🎉 Happy Birthday Annaya! 🎂</h1>
+    <p class="message">Wishing you a day filled with love, laughter, and unforgettable moments.</p>
+    
+    <button onclick="showMessage()">Click for Surprise 🎁</button>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+      <div class="mySlides fade"><img src="./images/anna.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/annaya 2.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/annaya 3.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/annaya 6.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/annaya 5.jpg" class="slide-img"></div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div class="dots-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <a href="surprise.html" class="surprise-link">Click here for a secret message ❤️</a>
+  </div>
+
+  <!-- Autoplay Background Music -->
+  <audio id="bgMusic" autoplay loop>
+    <source src="annaya song.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

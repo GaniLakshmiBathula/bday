@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>From the Heart 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="message-box">
+    <h1>Dear Annaya,</h1>
+    <p>
+      On this special day, I just want to say how much you mean to me. ❤️<br><br>
+      Wishing you many more Happy returns of the day Annaya.<br><br>
+      I hope your day filled with happiness and lots of memories.I wish may all your dreams come true annaya.You are always my first priority. 
+      I am always with you whatever the situation.I will always stand for you.
+      I hope our bond will be grow with us.These past days we have distance between us i hope those days will never come back.
+      I hope we will always be happy and close with each other.You are the best god gifted brother for me.
+      I missed you so much in these past days.I cry for you i don't know what is the reason.But finally i understood annaya,I can't imagine my life without you.
+      I feel very sad and upset you are not with me.Sometimes I feel like you are moving from me.But finally again we are together same as before,I feel very happy Annaya.<br><br>
+      Forever my brother,
+      You are one of the most important people in my life  and I will always love you.
+      Always my supporter,You are my Nanna, more than a brother.
+Thank you for coming into my life.
+And thank you for being the best big brother in the world.
+I love you so much Annaya and miss you so much annaya.
+Once Again Happy Birthday my dear one and only lovely brother.
+<br><br>
+      With all my love,<br>
+      <strong>— Your Pottomma 💕</strong>
+    </p>
+  </div>
+
+  <!-- Surprise Background Music -->
+  <audio id="surpriseMusic" autoplay loop>
+    <source src="soft_piano.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    // Fallback for autoplay restrictions
+    window.addEventListener('load', () => {
+      const music = document.getElementById("surpriseMusic");
+      const playPromise = music.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          document.addEventListener("click", () => music.play(), { once: true });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
